@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220310 11:09:06.949" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="D:\Users\dram-\Desktop\robotCustomLibrary\test.robot">
+<test id="s1-t1" name="TestCase1 test">
+<kw name="Read Col1" library="ReadExcel">
+<var>${value}</var>
+<arg>./data.xlsx</arg>
+<msg timestamp="20220310 11:09:08.220" level="INFO">${value} = [1, 2, 3, 4]</msg>
+<status status="PASS" starttime="20220310 11:09:07.746" endtime="20220310 11:09:08.220"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220310 11:09:08.221" level="INFO">[1, 2, 3, 4]</msg>
+<status status="PASS" starttime="20220310 11:09:08.221" endtime="20220310 11:09:08.221"/>
+</kw>
+<status status="PASS" starttime="20220310 11:09:07.745" endtime="20220310 11:09:08.221"/>
+</test>
+<status status="PASS" starttime="20220310 11:09:06.951" endtime="20220310 11:09:08.223"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
